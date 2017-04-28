@@ -1,0 +1,35 @@
+{
+  "name": "mongodbext-relations",
+  "version": "1.0.0",
+  "description": "mongodbext plugin that bring relations between collections",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --bail --timeout 10000 --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/2do2go/mongodbext-relations.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "db",
+    "mongodbext",
+    "relations",
+    "collections",
+    "triggers"
+  ],
+  "author": "Artem Zhukov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2do2go/mongodbext-relations/issues"
+  },
+  "homepage": "https://github.com/2do2go/mongodbext-relations#readme",
+  "devDependencies": {
+    "mocha": "2.0.1",
+    "expect.js": "0.3.1",
+    "twostep": "0.4.1",
+    "mongodb": ">=2.0",
+    "mongodbext": ">=2.1"
+  }
+}
