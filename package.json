@@ -25,6 +25,9 @@
     "url": "https://github.com/2do2go/mongodbext-relations/issues"
   },
   "homepage": "https://github.com/2do2go/mongodbext-relations#readme",
+  "peerDependencies": {
+    "mongodbext": ">=2.1"
+  },
   "devDependencies": {
     "mocha": "2.0.1",
     "expect.js": "0.3.1",
