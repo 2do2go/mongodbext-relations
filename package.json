@@ -1,6 +1,6 @@
 {
   "name": "mongodbext-relations",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "mongodbext plugin that bring relations between collections",
   "main": "lib/index.js",
   "scripts": {
