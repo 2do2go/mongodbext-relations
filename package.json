@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/2do2go/mongodbext-relations#readme",
   "peerDependencies": {
-    "mongodbext": ">=2.1.1"
+    "mongodbext": ">=2.1.2"
   },
   "devDependencies": {
     "mocha": "2.0.1",
