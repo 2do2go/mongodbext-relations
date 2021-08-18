@@ -95,6 +95,9 @@ Relations plugin adds new `trustEmbeddedValue` option to the following methods:
  * `updateMany`
  * `upsertOne`
  * `replaceOne`
+ * `findOneAndUpdate`
+ * `findOneAndReplace`
+ * `findOneAndUpsert`
 
 Passing `trustEmbeddedValue: true` will skip any additional mongodb requests for relations containig plain objects instead of identifiers. `projection` is still applied, though.
 
