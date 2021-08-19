@@ -84,3 +84,24 @@ MongoClient.connect('mongodb://localhost:27017/test', function(err, db) {
 });
 
 ```
+
+**skipping additional db requests with `trustEmbeddedValue` flag:**
+
+Relations plugin adds new `trustEmbeddedValue` option to the following methods:
+
+ * `insertOne`
+ * `insertMany`
+ * `updateOne`
+ * `updateMany`
+ * `upsertOne`
+ * `replaceOne`
+ * `findOneAndUpdate`
+ * `findOneAndReplace`
+ * `findOneAndUpsert`
+
+Passing `trustEmbeddedValue: true` will skip any additional mongodb requests for relations containig plain objects instead of identifiers. `projection` is still applied, though.
+
+This logic has two important pitfalls:
+
+ * Some complex projections are not supported. Using `trustEmbeddedValue: true` with unsupported projection will cause an error to be thrown.
+ * Provided object is used "as is", which may result in saving outdated data. Missing fields are not fetched, but any fields not matching `projection` are dropped.
