@@ -1,6 +1,8 @@
 # mongodbext-relations
 mongodbext plugin that bring relations between collections
 
+**Supports only mongodb 3.6+**
+
 **options:**
 
 * `relations` (required) - hash of fields that should be embedded, should be specified in format: `{field1: field1Options, field2: fieldOptions, ...}`.
