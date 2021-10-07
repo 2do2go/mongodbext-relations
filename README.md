@@ -1,7 +1,7 @@
 # mongodbext-relations
 mongodbext plugin that bring relations between collections
 
-**Supports only mongodb 3.6+**
+**Starting from `mongodbext-relations@2.x` supports mongodb 3.6+ only**
 
 **options:**
 
