@@ -29,7 +29,7 @@
     "mongodbext": ">=2.1.2"
   },
   "devDependencies": {
-    "mocha": "2.0.1",
+    "mocha": "10.2.0",
     "expect.js": "0.3.1",
     "twostep": "0.4.1",
     "mongodb": ">=2.0",
